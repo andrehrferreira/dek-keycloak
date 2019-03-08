@@ -2,8 +2,6 @@
 
 Keycloak interface plugin for DEK
 
-[![npm package](https://nodei.co/npm/@dekproject/keycloak.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/@dekproject/keycloak/)
-
 ## What does this plugin do?
 
 * Create a basic connection with Keycloak
