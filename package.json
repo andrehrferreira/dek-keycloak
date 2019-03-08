@@ -1,0 +1,38 @@
+{
+    "name": "@dekproject/keycloak",
+    "version": "1.0.0",
+    "description": "Keycloak interface plugin for DEK",
+    "main": "./build/index.js",
+    "scripts": {
+        "test": "mocha",
+        "sample": "npm run build && babel-node sample --presets env",
+        "build": "babel src -s -D -d build --presets env"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dekproject/keycloak.git"
+    },
+    "keywords": [
+        "dek",
+        "plugin",
+        "keycloak"
+    ],
+    "author": "Andre Ferreira <andre@vigiadepreco.com.br>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/dekproject/keycloak/issues"
+    },
+    "homepage": "https://github.com/dekproject/keycloak#readme",
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "dotenv": "^6.2.0",
+        "mocha": "^6.0.1"
+    },
+    "dependencies": {
+        "@dekproject/keycloak-sample": "file:sample",
+        "cookie-parser": "^1.4.4",
+        "express-session": "^1.15.6",
+        "keycloak-connect": "^5.0.0"
+    }
+}
