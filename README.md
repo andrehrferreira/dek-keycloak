@@ -92,10 +92,11 @@ import { $, plugins, keycloak, memoryStore } from "@dekproject/scope";
 
 Using in the standard DEK skeleton
 ```js
+import session from "express-session";
 import { $, app, keycloak, memoryStore } from "@dekproject/scope";
 import routes from "@dekproject/routes";
 
-$.wait("keycloak").then(() => {
+$.wait(["app", "keycloak"]).then(() => {
     $.app.use(session({
         secret: 'secret',
         resave: false,
