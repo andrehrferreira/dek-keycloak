@@ -1,6 +1,6 @@
 {
     "name": "@dekproject/keycloak",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Keycloak interface plugin for DEK",
     "main": "./build/index.js",
     "scripts": {
@@ -30,8 +30,6 @@
         "mocha": "^6.0.1"
     },
     "dependencies": {
-        "@dekproject/keycloak-sample": "file:sample",
-        "cookie-parser": "^1.4.4",
         "express-session": "^1.15.6",
         "keycloak-connect": "^5.0.0"
     }

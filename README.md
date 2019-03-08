@@ -2,7 +2,9 @@
 
 Keycloak interface plugin for DEK
 
-What does this plugin do?
+[![npm package](https://nodei.co/npm/@dekproject/keycloak.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/@dekproject/keycloak/)
+
+## What does this plugin do?
 
 * Create a basic connection with Keycloak
 * Use **express-session** to create session
