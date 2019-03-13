@@ -51,7 +51,6 @@ $ npm i @dekproject/scope
 ```js
 import express from "express";
 import session from "express-session";
-import cookieParser from "cookie-parser";
 import bodyParser from "body-parser";
 
 import { $, plugins, keycloak, memoryStore } from "@dekproject/scope";
@@ -66,8 +65,6 @@ import { $, plugins, keycloak, memoryStore } from "@dekproject/scope";
     const PORT = process.env.PORT || 5555;
 
     $.wait("keycloak").then(async () => {
-        $.app.use( cookieParser() );
-
         $.app.use(session({
             secret: 'secret',
             resave: false,
